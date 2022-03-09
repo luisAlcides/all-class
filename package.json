@@ -1,0 +1,20 @@
+{
+  "name": "allclass",
+  "version": "1.0.0",
+  "description": "Proyecto para implementar todas las clases de matematica, estadistica y metodos numericos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisAlcides/allclass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisAlcides/allclass/issues"
+  },
+  "homepage": "https://github.com/luisAlcides/allclass#readme"
+}
