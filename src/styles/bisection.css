@@ -4,7 +4,7 @@
   margin-top: 20px;
   margin-left: 3px;
   height: auto;
-  display: grid;
+  display: block;
   gap: 20px;
   grid-template-columns: repeat(10, 1fr);
   /* display: flex; */
@@ -77,6 +77,16 @@
 }
 
 @media screen and (max-width: 320px) {
+  .section-input-user{
+    display: block;
+  }
+
+  .section-input-user input[type=button]{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
   .section-input-user{
     display: block;
   }
