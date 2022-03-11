@@ -76,7 +76,7 @@
   font-size: 1.6rem;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .section-input-user{
     display: block;
   }
