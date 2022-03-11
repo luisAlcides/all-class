@@ -76,3 +76,12 @@
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 320px) {
+  .section-input-user{
+    display: block;
+  }
+
+  .section-input-user input[type=button]{
+    margin-top: 20px;
+  }
+}
