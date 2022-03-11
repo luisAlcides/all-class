@@ -4,7 +4,7 @@
   margin-top: 20px;
   margin-left: 3px;
   height: auto;
-  display: block;
+  display: grid;
   gap: 20px;
   grid-template-columns: repeat(10, 1fr);
   /* display: flex; */
@@ -76,22 +76,39 @@
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 320px) {
+
+
+@media screen and (max-width: 425px) {
+  header{
+    display: none;
+  }
   .section-input-user{
     display: block;
   }
-
+  
+  
   .section-input-user input[type=button]{
     margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  header{
+    display: block;
+    height: 500px;
+  }
   .section-input-user{
     display: block;
+    width: 100vw;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .section-input-user input{
+    margin: 0 auto;
   }
 
   .section-input-user input[type=button]{
     margin-top: 20px;
+    width: 200px;
   }
 }

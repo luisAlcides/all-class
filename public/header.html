@@ -9,12 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../src/styles/header.css">
+  <link rel="stylesheet" href="../src/styles/global.css">
 </head>
 
 <body>
-  <header>
+	<div class="logo"><img class="hamburguer-logo" src="../img/hamburger-svgrepo-com.svg" alt=""></div>
+  <header  id="header">
 		<div class="wrapper">
-			<!-- <div class="logo">AllClass</div> -->
 			
 			<nav>
 				<a href="../index.html">Inicio</a>
@@ -27,6 +28,18 @@
 		</div>
 	</header>
 </body>
+
+<script>
+	const header= document.getElementById("header")
+	const hamburguer = document.getElementsByClassName("hamburguer-logo")
+	hamburguer.addEventListener('click', (e) =>{
+		if(header.style.display === "none"){
+			e.style.display = "block"
+		}else{
+			e.style.display = "none"
+		}
+	})
+</script>
 
 </html>
 
