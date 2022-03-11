@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <link rel="stylesheet" href="../src/styles/bisection.css">
+  <title>Metodo Bisección</title>
+</head>
+
+<body>
+
+  <div data-include="header"></div>
+
+  <h1>Metodo Bisección</h1>
+  <section class="section-input-user">
+      <p><span>Funcion</span></p>
+    <!-- <button id="btn-tan1">tan-1</button>
+    <button id="btn-tan">tan</button>
+    <button id="btn-sen">sen</button>
+    <button id="btn-cos">cos</button>
+    <button id="btn-e">e</button> -->
+    <input type="text" name="" id="function-user" required>
+    <p><span >xa</span></p>
+    <input required type="number" name="" id="xa-user">
+    <p><span >xb</span></p>
+    <input required type="number" name="" id="xb-user">
+    <p><span >Iteraciones</span></p>
+    <input type="number" name="" id="iteration-user">
+    <p><span>Error</span></p>
+    <input type="number" name="" id="error-user">
+    
+    <input type="button" value="Calcular" id="btn-calculate-methods">
+  </section>
+
+  <div class="allResponse" id="allResponse"></div>
+
+  <script src="../src/js/numericalMethods.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var includes = $('[data-include]')
+      $.each(includes, function () {
+        var file = './' + $(this).data('include') + '.html'
+        $(this).load(file)
+      })
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <title>Metodos numericos</title>
+</head>
+<body>
+  
+  <div data-include="header"></div>
+  
+  <h1>Metodos Numericos</h1>
+  <h2><a href="BisectionMethods.html">Metodo biseccion</a></h2>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script> 
+    $(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = './' + $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+})
+    </script>  
+</body>
+</html>

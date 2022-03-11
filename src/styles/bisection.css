@@ -1,0 +1,78 @@
+.section-input-user {
+
+  width: 90vw;
+  margin-top: 20px;
+  margin-left: 3px;
+  height: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  /* display: flex; */
+  /* justify-content: flex-center; */
+
+  /* margin-left: 5px; */
+  /* place-content: center; */
+  /* flex-wrap: wrap; */
+  /* overflow: hidden; */
+
+}
+
+.section-input-user p span {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.section-input-user input[type=text],
+.section-input-user input[type=number] {
+  width: 100px;
+  display: block;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.section-input-user input[type=text]:focus,
+.section-input-user input[type=text]:active,
+.section-input-user input[type=number]:active,
+.section-input-user input[type=number]:focus {
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.section-input-user input[type=number]::-webkit-inner-spin-button, 
+.section-input-user input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.section-input-user input[type=text]{
+  width: 200px;
+}
+
+.section-input-user input[type="button"] {
+  width: 100px;
+  height: 40px;
+  grid-column: 5/7;
+}
+
+.section-input-user input[type="button"]{
+  font-family: var(--font1);
+  border-radius: 10%;
+  width: 100px;
+  outline: none;
+  color: White;
+  background-color: var(--colorbackground);
+}
+
+.section-input-user input[type="button"]:hover{
+  background-color: #4a515f;
+}
+
+
+.allResponse {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
